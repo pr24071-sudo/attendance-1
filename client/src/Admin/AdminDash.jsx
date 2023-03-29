@@ -47,15 +47,15 @@ const AdminDash = () => {
 
 
     // fetching data using axios------
-    const callAboutPageone = async ()=>{
-        try {
-            const res = await axios.get(`http://localhost:9000/alldata`)
-            setuserData(res.data)
+//     const callAboutPageone = async ()=>{
+//         try {
+//             const res = await axios.get(`http://localhost:9000/alldata`)
+//             setuserData(res.data)
          
-        } catch (error) {
-            console.log(error);
-        }
-    }
+//         } catch (error) {
+//             console.log(error);
+//         }
+//     }
 
 
 
@@ -63,7 +63,7 @@ const AdminDash = () => {
     const callAboutPage = async () => {
         try {
 
-            const res = await fetch(`/alldata?_start=0&_end=4`, {
+            const res = await fetch(`https://185.181.11.232:3000/admindash`, {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
